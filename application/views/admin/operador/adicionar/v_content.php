@@ -1,0 +1,26 @@
+<div class="col-md-12 top-20 padding-0">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading"><h3>
+                    Agregar operador
+                </h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" action="<?= base_url('operador/adicionar') ?>" method="POST">
+                    <div class="box-body">               
+                        <?= my_input('nombre', 'Nombre', 'Nombre', TRUE) ?>                     
+                        <?= my_input('apellidos', 'Apellidos', 'Apellidos', TRUE) ?>
+                        <input type="hidden" name="disponibilidad" value="0">
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">                
+                        <button type="submit" class="btn btn-primary btn-gradient pull-right" style="margin-left: 5px;">Agregar</button>
+                        <a class="btn btn-success btn-gradient pull-right" href="<?= base_url("operador") ?>">Volver</a>
+                    </div>
+                    <!-- /.box-footer -->
+                </form>   
+            </div>
+        </div>
+    </div>  
+</div>
+
